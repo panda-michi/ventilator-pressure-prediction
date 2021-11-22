@@ -1,0 +1,7 @@
+*__pycache__/
+*outs/
+*logs/
+*.vscode/
+*scripts/
+code.py
+.DS_Store
