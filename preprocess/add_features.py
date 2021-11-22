@@ -336,7 +336,7 @@ def add_features_v6(df, n_round=-1):
 
     return df
 
-# reffered from https://www.kaggle.com/dlaststark/gb-vpp-pulp-fiction
+# referenced from https://www.kaggle.com/dlaststark/gb-vpp-pulp-fiction
 def add_features_v7(df):
     df['cross']= df['u_in'] * df['u_out']
     df['cross2']= df['time_step'] * df['u_out']

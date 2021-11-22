@@ -13,7 +13,7 @@ def load_bidLSTM(input_dim, hidden0, hidden1, hidden2, hidden3, dense):
 
     return model
 
-# reffered from https://www.kaggle.com/dlaststark/gb-vpp-pulp-fiction
+# referenced from https://www.kaggle.com/dlaststark/gb-vpp-pulp-fiction
 def load_dlast(input_dim):
     x_input = keras.layers.Input(shape=(80, input_dim))
     

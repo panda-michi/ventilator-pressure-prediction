@@ -2,7 +2,7 @@ import numpy as np
 import torch
 import pytorch_lightning as pl
 
-_default_workplace = '/content/drive/MyDrive/kaggle/codes/ventilator_pressure_prediction/'
+_default_workplace = '/content/drive/MyDrive/kaggle/codes/ventilator-pressure-prediction/'
 class SequentialTrain(pl.LightningModule):
     def __init__(
                 self,

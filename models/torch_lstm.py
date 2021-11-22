@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 
-# reffred from https://www.kaggle.com/theoviel/deep-learning-starter-simple-lstm
+# referenced from https://www.kaggle.com/theoviel/deep-learning-starter-simple-lstm
 class simpleLSTM(nn.Module):
     def __init__(self, input_dim, lstm_dim, dense_dim, logit_dim, num_classes):
         super().__init__()
@@ -82,7 +82,7 @@ class dualDeepLSTM(nn.Module):
         self.pressure_in  = nn.Linear(dense, 1)
         self.pressure_out = nn.Linear(dense, 1)
 
-        #reffered: https://www.kaggle.com/junkoda/pytorch-lstm-with-tensorflow-like-initialization/notebook
+        #refferenced: https://www.kaggle.com/junkoda/pytorch-lstm-with-tensorflow-like-initialization/notebook
         for name, p in self.named_parameters():
             if 'lstm' in name:
                 if 'weight_ih' in name:
@@ -153,7 +153,7 @@ class TsLSTM(nn.Module):
         self.r_embed.weight.data.uniform_(-initrange, initrange)
         self.c_embed.weight.data.uniform_(-initrange, initrange)
 
-        #reffered: https://www.kaggle.com/junkoda/pytorch-lstm-with-tensorflow-like-initialization/notebook
+        #referenced: https://www.kaggle.com/junkoda/pytorch-lstm-with-tensorflow-like-initialization/notebook
         for name, p in self.named_parameters():
             if 'lstm' in name:
                 if 'weight_ih' in name:
